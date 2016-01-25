@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 import datetime
@@ -12,5 +12,5 @@ pat = '<meta name="keywords" content="(.*?)/>'
 with open('nytimes_keywords.txt', 'a') as f:
     f.write(datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
     f.write('\n')
-	f.write(re.findall(pat, page)[0])
-	f.write('\n\n')
+    f.write(re.findall(pat, page)[0])
+    f.write('\n\n')
